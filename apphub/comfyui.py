@@ -112,7 +112,7 @@ class Comfyui(App):
         super().installation(install_location)
 
         if self.in_work:
-            self.execute_command(f"conda create -y --prefix /home/featurize/work/app/{self.key}/env python=3.11")
+            self.execute_command(f"conda create -y --prefix /home/featurize/work/app/{self.key}/env python=3.10")
     
         with self.conda_activate(self.env_name):
             self.execute_command("git clone git://172.16.0.219/comfyanonymous/ComfyUI")
